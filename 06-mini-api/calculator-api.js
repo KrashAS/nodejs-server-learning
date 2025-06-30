@@ -4,15 +4,21 @@ const url = require("url");
 function calculate(a, b, op) {
     switch (op) {
         case "add":
-            return a + b;
+            return { expression: `${a} + ${b}`, result: a + b };
         case "sub":
-            return a - b;
+            return { expression: `${a} - ${b}`, result: a - b };
         case "mul":
-            return a * b;
+            return { expression: `${a} * ${b}`, result: a * b };
         case "div":
-            return b !== 0 ? a / b : "❌ На нуль ділити не можна!";
+            return {
+                expression: `${a} / ${b}`,
+                result: b !== 0 ? a / b : "❌ На нуль ділити не можна!",
+            };
         default:
-            return "❌ Невідома операція";
+            return {
+                expression: `${a} ${op} ${b}`,
+                result: "❌ Невідома операція",
+            };
     }
 }
 
@@ -30,7 +36,7 @@ const server = http.createServer((req, res) => {
             res.writeHead(200, {
                 "Content-Type": "application/json; charset=utf-8",
             });
-            res.end(JSON.stringify({ result }));
+            res.end(JSON.stringify(result));
         } else if (req.method === "POST") {
             let body = "";
 
@@ -48,7 +54,7 @@ const server = http.createServer((req, res) => {
                     res.writeHead(200, {
                         "Content-Type": "application/json; charset=utf-8",
                     });
-                    res.end(JSON.stringify({ result }));
+                    res.end(JSON.stringify(result));
                 } catch (err) {
                     res.writeHead(400, {
                         "Content-Type": "text/plain; charset=utf-8",
