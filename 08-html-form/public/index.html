@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>📩 HTML Форма</title>
+    </head>
+    <body>
+        <h2>Відправити повідомлення</h2>
+        <form action="/submit" method="POST">
+            <input name="name" placeholder="Ваше ім’я" required /><br />
+            <textarea
+                name="message"
+                placeholder="Повідомлення"
+                required
+            ></textarea
+            ><br />
+            <button type="submit">Надіслати</button>
+        </form>
+    </body>
+</html>
