@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="uk">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Node.js JSON API</title>
+        <link rel="stylesheet" href="/styles.css" />
+    </head>
+    <body>
+        <h1>Відправити повідомлення на сервер</h1>
+
+        <form id="messageForm">
+            <label for="name">Ім'я:</label>
+            <input type="text" id="name" name="name" required />
+
+            <label for="message">Повідомлення:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Відправити</button>
+        </form>
+
+        <div id="response"></div>
+        <div id="messagesContainer"></div>
+
+        <script type="module" src="/script.js"></script>
+    </body>
+</html>
