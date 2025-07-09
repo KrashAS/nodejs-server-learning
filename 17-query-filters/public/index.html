@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="uk">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Повідомлення API</title>
+        <link rel="stylesheet" href="/styles.css" />
+    </head>
+    <body>
+        <h1>💬 API Повідомлень</h1>
+
+        <div id="messageForm">
+            <input type="text" id="nameInput" placeholder="Ваше ім’я" />
+            <textarea
+                id="messageInput"
+                placeholder="Ваше повідомлення"
+            ></textarea>
+            <button id="sendBtn">Надіслати</button>
+        </div>
+
+        <div id="response"></div>
+        <div id="messagesContainer"></div>
+
+        <script type="module" src="/script.js"></script>
+    </body>
+</html>
