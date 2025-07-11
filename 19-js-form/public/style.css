@@ -1,0 +1,55 @@
+body {
+    font-family: sans-serif;
+    max-width: 600px;
+    margin: auto;
+    padding: 2rem;
+}
+
+input {
+    display: block;
+    margin-bottom: 10px;
+    padding: 6px;
+    width: 100%;
+}
+
+button {
+    padding: 8px 12px;
+}
+
+#response {
+    background: #fff;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    white-space: pre-wrap;
+    min-height: 40px;
+}
+
+#messageForm {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+#messageForm input,
+#messageForm textarea {
+    padding: 10px;
+    font-size: 1rem;
+}
+
+#messageForm button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.message {
+    background: #f1f1f1;
+    padding: 10px;
+    margin-top: 10px;
+}
