@@ -1,0 +1,56 @@
+body {
+    font-family: sans-serif;
+    padding: 2rem;
+    background: #f5f5f5;
+}
+
+input {
+    display: block;
+    margin-bottom: 10px;
+    padding: 6px;
+    width: 100%;
+}
+
+button {
+    padding: 8px 12px;
+}
+
+#response {
+    background: #fff;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    white-space: pre-wrap;
+    min-height: 40px;
+}
+
+#messageForm {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+#messageForm input,
+#messageForm textarea {
+    padding: 10px;
+    font-size: 1rem;
+}
+
+#messageForm button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.message {
+    background: white;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    margin-bottom: 1rem;
+    border-radius: 4px;
+}

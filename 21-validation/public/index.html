@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="uk">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Повідомлення</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <h1>💬 Надіслати повідомлення</h1>
+
+        <form id="messageForm">
+            <input type="text" name="name" placeholder="Ваше ім’я" required />
+            <textarea
+                name="message"
+                placeholder="Ваше повідомлення"
+                required
+            ></textarea>
+            <button type="submit">Надіслати</button>
+        </form>
+
+        <p id="response"></p>
+
+        <h2>📜 Історія повідомлень</h2>
+        <div id="messagesContainer"></div>
+
+        <script src="app.js"></script>
+    </body>
+</html>
